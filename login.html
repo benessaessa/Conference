@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LionCoders" />
+    <!-- Links -->
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link href="css/plugin.css" rel="stylesheet" />
+    <!-- style CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Document Title -->
+    <title>Login </title>
+</head>
+
+<body>
+    
+    <!--Page Wrapper starts-->
+    <div class="page-wrapper">
+        <div class="row justify-content-around mt-20">
+            <div class="col-lg-5 col-md-8">
+                <div class="loginSection">
+                    <img src="images/avat.jpg" class="mx-auto d-block img-login mb-10">
+                    <h6 class="text-center mb-0">Welcome</h6>
+                    <p class="text-center pb-20">Login to your account</p>
+                    <form action="db.html" method="post">
+                        <div class="form-group">
+                            <input id="" name="" required class="form-control" type="email"
+                                placeholder="Enter Email">
+                        </div>
+                        <div class="form-group pt-15 pb-10">
+                            <input id="" name="" required class="form-control" type="password" placeholder="Password">
+                        </div>
+                        <div class="row mt-20">
+                            <div class="col-md-8 col-12 text-left">
+                                <div class="res-box">
+                                    <input id="check-l" type="checkbox" name="check">
+                                    <label for="check-l">I agree on the <a href="#" class="text-primary">terms</a> and conditions</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <a class="forget" href="forgetPassword.html"> Forget Password ? </a>
+                            </div>
+                        </div>
+                        <div class="res-box text-center mt-10">
+                            <button type="submit" class="btn v8"><span class="lnr lnr-exit"></span> Log In</button>
+                        </div>
+                    </form>
+                    <div class="res-box text-center mt-10">
+                        <a href="signUp.html" type="submit" class="btn bg-white"><span class="lnr lnr-exit"></span> Sign Up insted</a>
+                    </div>
+                    <h5 class="text-center pt-2 mb-5">OR <br> Log in with social links</h5>
+                    <div class="row">
+                        <div class="col-lg-3 col-6 mt-2">
+                            <button class="btn btnSocial btn-primary btn-block"><i class="fab fa-facebook-f pr-1"></i> Facebook</button>
+                        </div>
+                        <div class="col-lg-3 col-6 mt-2">
+                            <button class="btn btnSocial btn-primary btn-block"><i class="fab fa-twitter pr-1"></i> Twitter</button>
+                        </div>
+                        <div class="col-lg-3 col-6 mt-2">
+                            <button class="btn btnSocial btn-danger btn-block"><i class="fab fa-google pr-1"></i>Google</button>
+                        </div>
+                        <div class="col-lg-3 col-6 mt-2">
+                            <button class="btn btnSocial btn-primary btn-block"><i class="fab fa-linkedin pr-1"></i> Linked In </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--Page Wrapper ends-->
+   
+    <!--Footer ends-->
+
+    <!--Scripts starts-->
+    <!--plugin js-->
+    <script src="js/plugin.js"></script>
+    <!--google maps-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C7p0Ws2gUu7wo0b6pK9Qu7LuzX2iWY&amp;libraries=places&amp;callback=initAutocomplete"></script>
+    <!--Main js-->
+    <script src="js/main.js"></script>
+    <!--Scripts ends-->
+</body>
+
+</html>
