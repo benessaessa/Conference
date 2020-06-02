@@ -30,7 +30,9 @@
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.3);
     right: 0;
 }
-
+.headerNosidebar{
+    left: 0;
+}
 .db-top-header .site-navbar-wrap.v2 {
     margin-left: -28px;
     border-bottom: none;
