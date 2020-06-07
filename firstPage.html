@@ -248,7 +248,7 @@
                         <p>Mohamed Essa</p>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <button class="btn btn-secondary btn-block mb-2">New Conference</button>
+                        <button class="btn btn-secondary btn-block mb-2" data-toggle="modal" data-target="#newConference">New Conference</button>
                     </div>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
@@ -357,6 +357,59 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    
+<!-- Modal -->
+    <div class="modal fade" id="newConference" tabindex="-1" role="dialog" aria-labelledby="newConferenceLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="newConferenceLabel">Create New Conference</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="contianer">
+                    <form action="db-invoices.html">
+                        <div class="form-group">
+                            <label for="confName">Conference Name</label>
+                            <input type="text" required class="form-control" id="confName" placeholder="">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="sDate">Start Date</label>
+                                    <input required type="date" class="form-control" id="sDate">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="eDate">End Date</label>
+                                    <input required type="date" class="form-control" id="eDate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="categ">Category</label>
+                            <select required class="form-control" id="categ">
+                            <option selected disabled>Select Category</option>
+                            <option>Category 1</option>
+                            <option>Category 2</option>
+                            </select>
+                        </div>
+                        <label>Upload Conference Image</label>
+                        <div class="custom-file">
+                            <input type="file" required class="custom-file-input" id="customFileLang" lang="es">
+                            <label class="custom-file-label" for="customFileLang">Upload Image</label>
+                        </div>
+                        <input type="submit" class="btn btn-primary mt-4" value="Add Conference">
+                    </form>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
     <!-- Plugin JS-->

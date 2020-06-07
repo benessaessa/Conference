@@ -1940,10 +1940,6 @@ ul.list-inline li {
     z-index: 9999;
 }
 
-.dropdown li a:hover {
-    margin-left: 5px;
-}
-
 .site-navbar .site-navigation .site-menu .has-children .dropdown:before {
     border-color: rgba(136, 183, 213, 0);
     border-bottom-color: #000;
