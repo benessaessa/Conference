@@ -52,6 +52,13 @@
     border: 2px solid rgb(165, 165, 165);
     width: 100px;
 }
+.slider img{
+    height: 21rem;
+    object-fit: cover;
+}
+.slider .carousel-control-prev-icon,.slider .carousel-control-next-icon{
+    /* background-color: unset; */
+}
 @media screen and (max-width:991px){
     .contentPage{
         padding-top: 20px !important;

@@ -52,12 +52,12 @@ h6 {
     border-radius: 0
 }
 
-.form-control:focus {
+/* .form-control:focus {
     border-color: #888;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
+} */
 
 
 .no-pad-left {
@@ -9765,12 +9765,12 @@ ul.business-hours li span {
     background-color: transparent;
 }
 
-#login-form .form-control:focus,
+/* #login-form .form-control:focus,
 #register-form .form-control:focus {
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-}
+} */
 
 #login-form input,
 #register-form input {
@@ -10690,22 +10690,22 @@ input[type="radio"] {
 /*-----------------------------------------
                     Contact Page
 ----------------------------------------*/
-#contact_form .form-control-wrap input {
+/* #contact_form .form-control-wrap input {
     border-top: none;
     border-left: none;
     border-right: none;
-}
+} */
 
-#contact_form .form-control-wrap input {
+/* #contact_form .form-control-wrap input {
     font-weight: 300;
     height: 45px;
     border-radius: 3px;
 
-}
+} */
 
-#contact_form .form-control-wrap textarea {
+/* #contact_form .form-control-wrap textarea {
     border-radius: 3px;
-}
+} */
 
 #contact_form .form-group {
     margin-bottom: 10px;
