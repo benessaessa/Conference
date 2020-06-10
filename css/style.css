@@ -8804,7 +8804,7 @@ ul.listing-features {
 .carousel-control-next span {
     width: 35px;
     height: 35px;
-    background: #fff;
+    /* background: #fff; */
     border-radius: 50%;
     line-height: 36px;
     font-size: 16px;
