@@ -22,7 +22,7 @@
     font-size: 14px;
 }
 .imgCard{
-    height: 200px;
+    height: 140px;
     object-fit: cover;
 }
 .imgMedia{
@@ -38,6 +38,9 @@
 }
 .newList .list-group-item{
     padding: 1rem 1.25rem;
+}
+.newList .list-group-item.active{
+    background-color: rgb(23, 59, 175);
 }
 .pgInation .page-item .page-link{
     padding: 1rem;
@@ -58,6 +61,32 @@
 }
 .slider .carousel-control-prev-icon,.slider .carousel-control-next-icon{
     /* background-color: unset; */
+}
+.newCard{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+}
+.newCard:hover{
+    box-shadow: 0 2px 4px 0 rgba(66, 66, 66, 0.8);
+}
+.newCard a:hover p{
+    color: black;
+}
+.imgEdit,.boxEdit{
+    position: absolute;
+    margin-top: -50px;
+    object-fit: cover;
+    width: 120px;
+    height: 60px;
+    border:2px solid white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+}
+.boxEdit{
+    background-color: white;
+    color: black;
+}
+.list-group-item-action{
+    background-color: rgba(114, 162, 48, 0.95);
+    color: white;
 }
 @media screen and (max-width:991px){
     .contentPage{
