@@ -235,6 +235,13 @@
   .sliderr.round:before {
     border-radius: 50%;
 }
+.ff_fileupload_start_upload{
+  display:none;
+}
+.headTable th{
+  font-weight: bold;
+  color: black;
+}
 @media screen and (max-width:991px){
     .contentPage{
         padding-top: 20px !important;
