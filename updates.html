@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <!-- Plugins CSS -->
     <link href="css/plugin.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
     <!-- Perfect scrollbar CSS-->
+    <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'textarea'});</script> -->
     <link href="css/perfect-scrollbar.css" rel="stylesheet">
     <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
     <!-- style CSS -->
@@ -22,7 +23,7 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>Important Dates</title>
+    <title>Tracks</title>
 </head>
 
 <body>
@@ -47,11 +48,11 @@
                                 <i class="fa fa-book"></i>Prefrences</a>
                         </li>
                         <li>
-                            <a href="conference-home.html">
+                            <a  href="conference-home.html">
                                 <i class="fa fa-chart-area"></i>Conference Home</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="active" href="#">
                                 <i class="fa fa-book-open"></i>Tracks</a>
                         </li>
                         <li>
@@ -59,7 +60,7 @@
                                 <i class="fa fa-phone"></i>Calls</a>
                         </li>
                         <li>
-                            <a class="active" href="#">
+                            <a href="important-dates.html">
                                 <i class="fa fa-calendar"></i>Important Dates</a>
                         </li>
                         <li>
@@ -167,87 +168,61 @@
                 </div>
             </header>
 
-            <div class="container">
-                <div class="row justify-content-lg-around">
-                    <div class="col-lg-11">
-                        <h3 class="py-3">Important Dates</h3>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-md-6">
+            <div class="container pt-3">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="sliderr round"></span>
+                </label>
+                <h6 class="py-2">On Submission link for all tracks</h6>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <form class="loginSection pt-4">
+                            <div class="row justify-content-lg-center pt-2">
+                                <div class="col-lg-6 col-md-12 pb-2">
                                     <div class="form-group">
-                                        <label>Track Name</label>
-                                        <select class="form-control">
-                                            <option>Track Name</option>
-                                        </select>
+                                        <input type="text" required class="form-control" placeholder="Track name" aria-describedby="helpId">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Track Name</label>
-                                        <input type="date" class="form-control">
-                                    </div>
+                                <div class="col-lg-6 col-md-12 pb-4">
+                                    <input type="text" required class="form-control" placeholder="Submission link" aria-describedby="helpId">
                                 </div>
                             </div>
-                            <textarea class="form-control" placeholder="Action" rows="5"></textarea>                            
-                            <button class="btn btn-outline-primary mt-3 px-5">Add</button>
+                            <textarea class="form-control" placeholder="Submission guide lines"></textarea>
+                            <button class="btn btn-outline-primary px-5 mt-4">Add</button>
                         </form>
                     </div>
-                </div>    
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="table-responsive pl-3 mt-5 pt-3">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr class="border-top headTable text-center">
-                                        <th>Tracks</th>
-                                        <th>Deadline</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
+                    <div class="col-lg-7">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="bg-success text-white font-weight-bold">
+                                    <tr>
+                                        <th>Updates</th>
+                                        <th colspan="2">Actions</th>
                                     </tr>
                                 </thead>
-                                <tbody class="text-center">
+                                <tbody>
                                     <tr>
-                                        <td>Track 1</td>
-                                        <td>20/6/2020</td>
-                                        <td>Action</td>
-                                        <td>
-                                            <p class="text-center">
-                                                <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
-                                                <button class="btn btn-outline-danger">Delete</button>
-                                            </p>
+                                        <td scope="row">
+                                            <p> maiores alias distinctio sequi nostrum ea earum explicabo eveniet nisi similique asperiores non reprehenderit officia!</p>
                                         </td>
+                                        <td><button class="btn px-4 btn-outline-primary">Edit</button></td>
+                                        <td><button class="btn btn-outline-danger">Delete</button></td>
                                     </tr>
                                     <tr>
-                                        <td>Track 1</td>
-                                        <td>20/6/2020</td>
-                                        <td>Action</td>
-                                        <td>
-                                            <p class="text-center">
-                                                <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
-                                                <button class="btn btn-outline-danger">Delete</button>
-                                            </p>
+                                        <td scope="row">
+                                            <p> maiores alias distinctio sequi nostrum ea earum explicabo eveniet nisi similique asperiores non reprehenderit officia!</p>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Track 1</td>
-                                        <td>20/6/2020</td>
-                                        <td>Action</td>
-                                        <td>
-                                            <p class="text-center">
-                                                <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
-                                                <button class="btn btn-outline-danger">Delete</button>
-                                            </p>
-                                        </td>
+                                        <td><button class="btn px-4 btn-outline-primary">Edit</button></td>
+                                        <td><button class="btn btn-outline-danger">Delete</button></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-                
             </div>
 
-           <!-- Footer -->
+            <!--Dashboard footer starts-->
             <div class="dash-footer">
                 <div class="container">
                     <div class="row">

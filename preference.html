@@ -49,7 +49,7 @@
                                 <i class="fa fa-book"></i>Prefrences</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="conference-home.html">
                                 <i class="fa fa-chart-area"></i>Conference Home</a>
                         </li>
                         <li>
@@ -170,290 +170,68 @@
             </header>
 
             <div class="container">
-                <h3 class="py-3 pl-3">Prefrences</h3>
-                <ul class="nav pb-3 pl-3 nav-pills" id="myTab" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" data-toggle="tab" href="#home" >Basic Information</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"  data-toggle="tab" href="#categories" >Categories</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"  data-toggle="tab" href="#about" >About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-toggle="tab" href="#location" >Location</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"  data-toggle="tab" href="#banner" > Banner </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"  data-toggle="tab" href="#features" >Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"  data-toggle="tab" href="#updates" >Updates</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane container fade show active" id="home">
-                        <form action="db-invoices.html" class="pt-3">
-                            
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="confName">Conference Name</label>
-                                        <input type="text" required class="form-control" id="confName" placeholder="Ex: egypt Conference">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="confName">Conference Short Name</label>
-                                        <input type="text" required class="form-control" id="confName" placeholder="Ex: IEEE">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="sDate">Start Date</label>
-                                        <input required type="date" class="form-control" id="sDate">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="eDate">End Date</label>
-                                        <input required type="date" class="form-control" id="eDate">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="confName">News Feed URL</label>
-                                        <input type="text" required class="form-control" id="confName" placeholder="Twitter Account">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 pt-1">
-                                    <input type="submit" class="btn px-5 btn-outline-primary mt-3" value="Save">
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-                    <div class="tab-pane container fade pt-3" id="categories">
-                        <h4>All Categories</h4>
-                        <label class="custm-check">
-                            <span><i class="fa fa-database"></i>  Data Base </span>
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="custm-check">
-                            <span><i class="fa fa-book"></i> Mashine Learning </span> 
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="custm-check">
-                            <span><i class="fa fa-edit"></i> Data Structure</span> 
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="custm-check"> 
-                            <span><i class="fa fa-book"></i> E-Learning</span> 
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                        <button class="btn btn-outline-primary px-5 mt-3">Save</button>
-                    </div>
-                    <div class="tab-pane container fade" id="about">
-                        <div class="container pt-3">
-                            <h4>About</h4>
-                            
-                            <textarea id="full-featured"><p style="text-align: center; font-size: 15px;"><img title="TinyMCE Logo" src="//www.tiny.cloud/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
-                            </p>
-                            <h2 style="text-align: center;">Welcome to the TinyMCE Cloud demo!</h2>
-                            <h5 style="text-align: center;">Note, this includes some "enterprise/premium" features.<br>Visit the <a href="https://www.tiny.cloud/pricing">pricing page</a> to learn more about our premium plugins.</h5>
-                            <p>Please try out the features provided in this full featured example.</p>
-
-                            <h2>Got questions or need help?</h2>
-                            <ul>
-                                <li>Our <a class="mceNonEditable" href="//www.tiny.cloud/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
-                                <li>Have a specific question? Visit the <a class="mceNonEditable" href="https://community.tiny.cloud/forum/">Community Forum</a>.</li>
-                                <li>We also offer enterprise grade support as part of <a href="https://www.tiny.cloud/pricing">TinyMCE premium subscriptions</a>.</li>
+                <!-- <h3 class="pt-3 pl-3">Prefrences</h3> -->
+                <div class="container pt-4">
+                    <h5 class="pb-4">Show/hide switches for below menus in your conference web site</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="sliderr round"></span>
+                                    </label>
+                                    <div><h4 class="pt-2">Sponsers</h4></div>
+                                </li>
+                                <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="sliderr round"></span>
+                                    </label>
+                                    <div><h4 class="pt-2">Important Dates</h4></div>
+                                </li>
                             </ul>
-
-                            <h2>A simple table to play with</h2>
-                            <table style="text-align: center;border-collapse: collapse; width: 100%;">
-                                <thead>
-                                <tr>
-                                    <th>Product</th>
-                                    <th>Cost</th>
-                                    <th>Really?</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>TinyMCE Cloud</td>
-                                    <td>Get started for free</td>
-                                    <td>YES!</td>
-                                </tr>
-                                <tr>
-                                    <td>Plupload</td>
-                                    <td>Free</td>
-                                    <td>YES!</td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                            <h2>Found a bug?</h2>
-                            <p>If you think you have found a bug please create an issue on the <a href="https://github.com/tinymce/tinymce/issues">GitHub repo</a> to report it to the developers.</p>
-
-                            <h2>Finally ...</h2>
-                            <p>Don't forget to check out our other product <a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.</p>
-                            <p>Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.</p>
-                            </textarea>
-                            <button class="btn btn-outline-primary px-5 mt-3">Save</button>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="location">
-                        <div class="container pt-3">
-                            <h4>Conference Location</h4>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <form action="#">
-                                        <input type="text" class="form-control" placeholder="Address 1">
-                                        <input type="text" class="form-control mt-3" placeholder="Address 2">
-                                        <input type="text" class="form-control mt-3" placeholder="City">
-                                        <input type="text" class="form-control mt-3" placeholder="Region">
-                                        <input type="number" class="form-control mt-3" placeholder="Zip Code">
-                                        <select class="form-control mt-3 mb-20">
-                                            <option selected disabled>Country</option>
-                                            <option>Cairo</option>
-                                        </select>
-                                        <button class="btn btn-outline-primary btn-block">Save</button>
-                                    </form>
-                                </div>
-                                <div class="col-md-8">
-                                    <iframe class="pt-2" width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?ll=30.04245390000001,31.2002801&q=Mohi Al Din Abou Al Ezz&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                </div>
-                            </div>
+                        <div class="col-md-4">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="sliderr round"></span>
+                                    </label>
+                                    <div><h4 class="pt-2">Organizers</h4></div>
+                                </li>
+                                <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="sliderr round"></span>
+                                    </label>
+                                    <div><h4 class="pt-2">Attendees</h4></div>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="banner">
-                        <div class="container pt-3">
-                            <p class="mt-1 pb-3">Drag & Drop or click in the box to upload Files</p>
-                           <form>
-                                <input class="thefiles" type="file" name="files" accept=".jpg, .png, image/jpeg, image/png" multiple>
-                                <button class="mt-3 btn px-5 btn-outline-primary">Save</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="features">
-                        <div class="container pt-2">
-                            <h5 class="py-2">Most importanat features</h5>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <ul class="list-group">
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <label class="switch">
-                                                <input type="checkbox" checked>
-                                                <span class="sliderr round"></span>
-                                            </label>
-                                            <div><h4 class="pt-2">Sponsers</h4></div>
-                                        </li>
-                                        <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
-                                            <label class="switch">
-                                                <input type="checkbox" checked>
-                                                <span class="sliderr round"></span>
-                                            </label>
-                                            <div><h4 class="pt-2">Important Dates</h4></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4">
-                                    <ul class="list-group">
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <label class="switch">
-                                                <input type="checkbox" checked>
-                                                <span class="sliderr round"></span>
-                                            </label>
-                                            <div><h4 class="pt-2">Organizers</h4></div>
-                                        </li>
-                                        <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
-                                            <label class="switch">
-                                                <input type="checkbox" checked>
-                                                <span class="sliderr round"></span>
-                                            </label>
-                                            <div><h4 class="pt-2">Attendees</h4></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4">
-                                    <ul class="list-group">
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <label class="switch">
-                                                <input type="checkbox" checked>
-                                                <span class="sliderr round"></span>
-                                            </label>
-                                            <div><h4 class="pt-2">Calls</h4></div>
-                                        </li>
-                                        <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
-                                            <label class="switch">
-                                                <input type="checkbox" checked>
-                                                <span class="sliderr round"></span>
-                                            </label>
-                                            <div><h4 class="pt-2">Tracks</h4></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="updates">
-                        <div class="container pt-3">
-                            <h4>Updates</h4>
-                            <form class="form-inline">
-                                <div class="form-group">
-                                    <label></label>
-                                    <input type="text" class="form-control" placeholder="Add New Update" aria-describedby="helpId">
-                                </div>
-                                <button class="btn ml-2 btn-primary">Update</button>
-                            </form>
+                        <div class="col-md-4">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="sliderr round"></span>
+                                    </label>
+                                    <div><h4 class="pt-2">Calls</h4></div>
+                                </li>
+                                <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="sliderr round"></span>
+                                    </label>
+                                    <div><h4 class="pt-2">Tracks</h4></div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Slider -->
-            <!-- <div id="sliderD" class="carousel slider slide pt-2" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#sliderD" data-slide-to="0" class="active"></li>
-                  <li data-target="#sliderD" data-slide-to="1"></li>
-                  <li data-target="#sliderD" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/avatar.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/rectangle.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/avatar.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#sliderD" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#sliderD" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div> -->
             <!--Dashboard footer starts-->
             <div class="dash-footer">
                 <div class="container">
