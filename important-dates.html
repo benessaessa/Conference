@@ -51,7 +51,7 @@
                                 <i class="fa fa-chart-area"></i>Conference Home</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="updates.html">
                                 <i class="fa fa-book-open"></i>Tracks</a>
                         </li>
                         <li>
@@ -168,41 +168,34 @@
             </header>
 
             <div class="container">
+                <h3 class="py-3">Important Dates</h3>
                 <div class="row justify-content-lg-around">
-                    <div class="col-lg-11">
-                        <h3 class="py-3">Important Dates</h3>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Track Name</label>
-                                        <select class="form-control">
-                                            <option>Track Name</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Track Name</label>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </div>
+                    <div class="col-lg-4 col-md-4 pb-3">
+                        <form action="#" class="loginSection">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Track Name</label>
+                                <select class="form-control pl-0">
+                                    <option>Track Name</option>
+                                </select>
                             </div>
-                            <textarea class="form-control" placeholder="Action" rows="5"></textarea>                            
+                        
+                            <div class="form-group">
+                                <label class="font-weight-bold">Track Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <textarea class="form-control" placeholder="Action"></textarea>                            
                             <button class="btn btn-outline-primary mt-3 px-5">Add</button>
                         </form>
                     </div>
-                </div>    
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="table-responsive pl-3 mt-5 pt-3">
-                            <table class="table table-hover">
-                                <thead>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="table-responsive pl-3">
+                            <table class="table table-hover table-bordered">
+                                <thead class="bg-success">
                                     <tr class="border-top headTable text-center">
-                                        <th>Tracks</th>
-                                        <th>Deadline</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
+                                        <th class="text-white">Tracks</th>
+                                        <th class="text-white">Deadline</th>
+                                        <th class="text-white">Status</th>
+                                        <th class="text-white">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody class="text-center">
@@ -243,7 +236,7 @@
                             </table>
                         </div>
                     </div>
-                </div>
+                </div> 
                 
             </div>
 
