@@ -386,10 +386,21 @@
             <div class="modal-body pb-0">
                 <div class="contianer">
                     <form action="db-invoices.html">
-                        <div class="form-group">
-                            <label for="confName">Conference Name</label>
-                            <input type="text" required class="form-control" id="confName" placeholder="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Conference Name <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="text" required class="form-control" placeholder="Egy">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Short Name <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="text" required class="form-control" placeholder="IEEE">
+                                </div>
+                            </div>
                         </div>
+                        
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -405,7 +416,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="categ">Category</label>
+                            <label for="categ">Category <i class="fa fa-asterisk text-danger fa-xs"></i></label>
                             <div class="form-group">
                               <select multiple class="form-control" id="categ">
                                 <option>Category 1</option>
@@ -417,7 +428,7 @@
                               </select>
                             </div>
                         </div>
-                        <label>Upload Conference Image</label>
+                        <label>Upload Conference Logo</label>
                         <div class="custom-file">
                             <input type="file" required class="custom-file-input" id="customFileLang" lang="es">
                             <label class="custom-file-label" for="customFileLang">Upload Image</label>

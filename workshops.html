@@ -14,8 +14,6 @@
     <link href="css/plugin.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
     <!-- Perfect scrollbar CSS-->
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>tinymce.init({selector:'textarea'});</script>
     <link href="css/perfect-scrollbar.css" rel="stylesheet">
     <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
     <!-- style CSS -->
@@ -24,7 +22,7 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>Preference</title>
+    <title>Workshops</title>
 </head>
 
 <body>
@@ -45,7 +43,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="active" href="preference.html">
+                            <a href="preference.html">
                                 <i class="fa fa-book"></i>Prefrences</a>
                         </li>
                         <li>
@@ -61,7 +59,7 @@
                                 <i class="fa fa-phone"></i>Calls</a>
                         </li>
                         <li>
-                            <a href="important-dates.html">
+                            <a class="active" href="#">
                                 <i class="fa fa-calendar"></i>Important Dates</a>
                         </li>
                         <li>
@@ -170,76 +168,88 @@
             </header>
 
             <div class="container">
-                <!-- <h3 class="pt-3 pl-3">Prefrences</h3> -->
-                <div class="container pt-4">
-                    <h5 class="pb-4">Show/hide switches for below menus in your conference web site</h5>
+                <h3 class="py-3">Workshops</h3>
+                <form action="#" class="loginSection">
                     <div class="row">
-                        <div class="col-md-4">
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="sliderr round"></span>
-                                    </label>
-                                    <div><h4 class="pt-2">Sponsers</h4></div>
-                                </li>
-                                <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="sliderr round"></span>
-                                    </label>
-                                    <div><h4 class="pt-2">Important Dates</h4></div>
-                                </li>
-                                <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="sliderr round"></span>
-                                    </label>
-                                    <div><h4 class="pt-2">Online Conference</h4></div>
-                                </li>
-                            </ul>
+                        <div class="col-md-6 py-2">
+                            <label>Workshop title </label>
+                            <input type="text" class="form-control" placeholder="Ex: computer Science">
                         </div>
-                        <div class="col-md-4">
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="sliderr round"></span>
-                                    </label>
-                                    <div><h4 class="pt-2">Organizers</h4></div>
-                                </li>
-                                <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="sliderr round"></span>
-                                    </label>
-                                    <div><h4 class="pt-2">Attendees</h4></div>
-                                </li>
-                            </ul>
+                        <div class="col-md-6 py-2">
+                            <label>Deadline</label>
+                            <input type="date" value="2020-06-25" class="form-control">
+                        </div> 
+                        <div class="col-md-6 py-2">
+                            <label>Submission link </label>
+                            <input type="text" class="form-control" placeholder="https://">
                         </div>
-                        <div class="col-md-4">
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="sliderr round"></span>
-                                    </label>
-                                    <div><h4 class="pt-2">Calls</h4></div>
-                                </li>
-                                <li class="list-group-item my-2 d-flex justify-content-between align-items-center">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="sliderr round"></span>
-                                    </label>
-                                    <div><h4 class="pt-2">Tracks</h4></div>
-                                </li>
-                            </ul>
+                        <div class="col-md-4 py-2">
+                            <label>Organizer name </label>
+                            <input type="text" class="form-control" placeholder="Essa">
+                        </div>  
+                        <div class="col-md-2 pt-4 mt-3">
+                           <button class="btn bg-white"><i class="fa fa-plus"></i></button>
                         </div>
-                    </div>
-                </div>
+                        <div class="col-12 py-2">
+                            <textarea class="form-control" placeholder="Workshop description"></textarea>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-outline-primary btn-block mt-3 px-3">Add</button>
+                        </div>  
+                    </div>                      
+                </form>
             </div>
+            <div class="table-responsive pt-3 pl-3">
+                <table class="table table-hover table-bordered">
+                    <thead class="bg-success">
+                        <tr class="border-top headTable text-center">
+                            <th class="text-white">Tracks</th>
+                            <th class="text-white">Deadline</th>
+                            <th class="text-white">Status</th>
+                            <th class="text-white">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr>
+                            <td>Track 1</td>
+                            <td>20/6/2020</td>
+                            <td>Action</td>
+                            <td>
+                                <p class="text-center">
+                                    <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Track 1</td>
+                            <td>20/6/2020</td>
+                            <td>Action</td>
+                            <td>
+                                <p class="text-center">
+                                    <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Track 1</td>
+                            <td>20/6/2020</td>
+                            <td>Action</td>
+                            <td>
+                                <p class="text-center">
+                                    <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+                
 
-            <!--Dashboard footer starts-->
+           <!-- Footer -->
             <div class="dash-footer">
                 <div class="container">
                     <div class="row">
