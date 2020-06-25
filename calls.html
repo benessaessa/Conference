@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <!-- Plugins CSS -->
     <link href="css/plugin.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
     <!-- Perfect scrollbar CSS-->
+    <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'textarea'});</script> -->
     <link href="css/perfect-scrollbar.css" rel="stylesheet">
     <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
     <!-- style CSS -->
@@ -22,7 +23,7 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>Important Dates</title>
+    <title>Calls</title>
 </head>
 
 <body>
@@ -47,19 +48,19 @@
                                 <i class="fa fa-book"></i>Prefrences</a>
                         </li>
                         <li>
-                            <a href="conference-home.html">
+                            <a  href="conference-home.html">
                                 <i class="fa fa-chart-area"></i>Conference Home</a>
                         </li>
                         <li>
                             <a href="tracks.html">
-                                <i class="fa fa-book-open"></i>Tracks</a>
+                                <i class="fa fa-book-open"></i>Tracks and Submissions</a>
                         </li>
                         <li>
-                            <a href="calls.html">
+                            <a class="active" href="calls.html">
                                 <i class="fa fa-phone"></i>Calls</a>
                         </li>
                         <li>
-                            <a class="active" href="#">
+                            <a href="important-dates.html">
                                 <i class="fa fa-calendar"></i>Important Dates</a>
                         </li>
                         <li>
@@ -167,97 +168,90 @@
                 </div>
             </header>
 
-            <div class="container">
-                <h3 class="py-3">Important Dates</h3>
-                <form action="#" class="loginSection">
-                    <div class="row">
-                        <div class="col-md-6 py-2">
-                            <!-- <div class="form-group">
-                                <label>Track Name</label>
-                                <select class="form-control pl-0">
-                                    <option>Track Name</option>
-                                </select>
-                            </div> -->
-                            <label>Workshop title </label>
-                            <input type="text" class="form-control" placeholder="Ex: computer Science">
+            <div class="container pt-3">
+                <h3 class="py-2">Calls</h3>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form class="loginSection pt-4">
+                            <div class="row justify-content-lg-center pt-2">
+                                <div class="col-lg-6 col-md-12 pb-2">
+                                    <div class="form-group pl-0">
+                                        <select class="form-control pl-0 ml-0">
+                                            <option selected disabled>Track Name</option>
+                                            <option>Cairo</option>
+                                        </select>
+                                    </div>
+                                    <textarea class="form-control txtArea"  placeholder="Submission guide lines"></textarea>
+                                </div>
+                                <div class="col-lg-6 col-md-12 pb-4">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="sliderr round"></span>
+                                            </label>
+                                            <div><h4 class="pt-2">Show Important Dates</h4></div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="sliderr round"></span>
+                                            </label>
+                                            <div><h4 class="pt-2">Show Submision link</h4></div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="sliderr round"></span>
+                                            </label>
+                                            <div><h4 class="pt-2">Show Organizers </h4></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-outline-primary px-5">Add</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="bg-success text-white font-weight-bold">
+                                    <tr>
+                                        <th>Tracks</th>
+                                        <th>Details</th>
+                                        <th colspan="2">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">
+                                            <p> maiores alias distinctio sequi nostrum ea earum explicabo eveniet </p>
+                                        </td>
+                                        <td>
+                                            <p>Click edit for details</p> 
+                                        </td>
+                                        <td><button class="btn px-4 btn-outline-primary">Edit</button></td>
+                                        <td><button class="btn btn-outline-danger">Delete</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <p> maiores alias distinctio sequi nostrum ea earum explicabo eveniet </p>
+                                        </td>
+                                        <td>
+                                            <p>Click edit for details</p> 
+                                        </td>
+                                        <td><button class="btn px-4 btn-outline-primary">Edit</button></td>
+                                        <td><button class="btn btn-outline-danger">Delete</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="col-md-6 py-2">
-                            <label>Deadline</label>
-                            <input type="date" value="2020-06-25" class="form-control">
-                        </div> 
-                        <div class="col-md-6 py-2">
-                            <!-- <div class="form-group">
-                                <label>Track Date</label>
-                                <input type="date" placeholder="" class="form-control">
-                            </div> -->
-                            <label>Submission link </label>
-                            <input type="text" class="form-control" placeholder="https://">
-                        </div>
-                        <div class="col-md-6 py-2">
-                            <label>Organizer name </label>
-                            <input type="text" class="form-control" placeholder="Essa">
-                            <!-- <button class="btn btn-outline-primary btn-block mt-3 px-5">Add</button> -->
-                        </div>  
-                        <div class="col-12 py-2">
-                            <textarea class="form-control" placeholder="Workshop description"></textarea>
-                        </div>
-                        <div class="col-md-3">
-                            <button class="btn btn-outline-primary btn-block mt-3 px-3">Add</button>
-                        </div>  
-                    </div>                      
-                </form>
+                    </div>
+                </div>
             </div>
-            <div class="table-responsive pt-3 pl-3">
-                <table class="table table-hover table-bordered">
-                    <thead class="bg-success">
-                        <tr class="border-top headTable text-center">
-                            <th class="text-white">Tracks</th>
-                            <th class="text-white">Deadline</th>
-                            <th class="text-white">Status</th>
-                            <th class="text-white">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-center">
-                        <tr>
-                            <td>Track 1</td>
-                            <td>20/6/2020</td>
-                            <td>Action</td>
-                            <td>
-                                <p class="text-center">
-                                    <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
-                                    <button class="btn btn-outline-danger">Delete</button>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Track 1</td>
-                            <td>20/6/2020</td>
-                            <td>Action</td>
-                            <td>
-                                <p class="text-center">
-                                    <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
-                                    <button class="btn btn-outline-danger">Delete</button>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Track 1</td>
-                            <td>20/6/2020</td>
-                            <td>Action</td>
-                            <td>
-                                <p class="text-center">
-                                    <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
-                                    <button class="btn btn-outline-danger">Delete</button>
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div> 
-                
 
-           <!-- Footer -->
+            <!--Dashboard footer starts-->
             <div class="dash-footer">
                 <div class="container">
                     <div class="row">

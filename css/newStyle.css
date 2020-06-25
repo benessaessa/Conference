@@ -251,6 +251,14 @@
         padding-top: 20px !important;
     }
 }
+@media screen and (max-width:390px){
+  .list-group-item h4{
+    font-size: 14px;
+  }
+}
+.txtArea{
+  min-height: 11.2rem !important;
+}
 .pageColor{
   background-color: #f44336;
   color: white;
