@@ -796,3 +796,13 @@ document.getElementById('buttonid').addEventListener('click', openDialog);
 function openDialog() {
 document.getElementById('fileidE').click();
 }
+function readURLEdit(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('#changeImgEdit')
+                .attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}

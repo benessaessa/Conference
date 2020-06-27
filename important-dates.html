@@ -63,8 +63,12 @@
                                 <i class="fa fa-calendar"></i>Important Dates</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fa fa-users"></i>Users</a>
+                            <a href="workshops.html">
+                                <i class="fa fa-edit"></i>Workshops</a>
+                        </li>
+                        <li>
+                            <a href="organizers.html">
+                                <i class="fa fa-users"></i>Organizers</a>
                         </li>
                         <li>
                             <a href="#">
@@ -171,18 +175,22 @@
                 <h3 class="py-3">Important Dates</h3>
                 <form action="#" class="loginSection">
                     <div class="row">
-                        <div class="col-md-6 py-2">
+                        <div class="col-md-4 py-2">
                             <div class="form-group">
                                 <label>Track Name</label>
-                                <select class="form-control pl-0">
-                                    <option>Track Name</option>
+                                <select required class="form-control pl-0">
+                                    <option>Track 1</option>
+                                    <option>Track 2</option>
+                                    <option>Track 3</option>
                                 </select>
                             </div>
-                            <!-- <label>Workshop title </label>
-                            <input type="text" class="form-control" placeholder="Ex: computer Science"> -->
                         </div>
-                        <div class="col-md-6 py-2">
-                            <label>Deadline</label>
+                        <div class="col-md-4 py-2">
+                            <label>Deadline <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                            <input required type="date" class="form-control">
+                        </div> 
+                        <div class="col-md-4 py-2">
+                            <label>Second Deadline</label>
                             <input type="date" value="2020-06-25" class="form-control">
                         </div> 
                         <div class="col-12 py-2">
@@ -190,57 +198,80 @@
                         </div>
                         
                         <div class="col-md-3">
-                            <button class="btn btn-outline-primary btn-block mt-3 px-3">Add</button>
+                            <input type="submit" class="btn btn-outline-primary btn-block mt-3 px-3" value="Add">
                         </div>  
                     </div>                      
                 </form>
-            </div>
-            <div class="table-responsive pt-3 pl-3">
-                <table class="table table-hover table-bordered">
-                    <thead class="bg-success">
-                        <tr class="border-top headTable text-center">
-                            <th class="text-white">Tracks</th>
-                            <th class="text-white">Deadline</th>
-                            <th class="text-white">Status</th>
-                            <th class="text-white">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-center">
-                        <tr>
-                            <td>Track 1</td>
-                            <td>20/6/2020</td>
-                            <td>Action</td>
-                            <td>
-                                <p class="text-center">
-                                    <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
-                                    <button class="btn btn-outline-danger">Delete</button>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Track 1</td>
-                            <td>20/6/2020</td>
-                            <td>Action</td>
-                            <td>
-                                <p class="text-center">
-                                    <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
-                                    <button class="btn btn-outline-danger">Delete</button>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Track 1</td>
-                            <td>20/6/2020</td>
-                            <td>Action</td>
-                            <td>
-                                <p class="text-center">
-                                    <button class="btn btn-outline-primary px-4 mr-2">Edit</button>
-                                    <button class="btn btn-outline-danger">Delete</button>
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <div class="card text-left">
+                          <div class="card-body">
+                            <h4 class="card-title">Track 1</h4>
+                            <div class="row">
+                                <div class="col-md-8 pt-1">
+                                    <p>Start Submission : 10/10/2020 - 12/12/2020</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-md-8 pt-1">
+                                    <p>End Submission : 10/10/2020 - 12/12/2020</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-md-8 pt-1">
+                                    <p>Start Submission 2 : 10/10/2020 - 12/12/2020</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-left">
+                          <div class="card-body">
+                            <h4 class="card-title">Track 2</h4>
+                            <div class="row">
+                                <div class="col-md-8 pt-1">
+                                    <p>Start Submission : 10/10/2020 - 12/12/2020</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-md-8 pt-1">
+                                    <p>End Submission : 10/10/2020 - 12/12/2020</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-md-8 pt-1">
+                                    <p>Start Submission 2 : 10/10/2020 - 12/12/2020</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div> 
                 
@@ -258,7 +289,7 @@
                 </div>
             </div>
             <!--Dashboard footer ends-->
-        </div>
+        </>
         <!--Dashboard content Wrapper ends-->
     </div>
     <!-- Plugin JS-->

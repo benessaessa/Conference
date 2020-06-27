@@ -22,7 +22,7 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>Workshops</title>
+    <title>Organizers</title>
 </head>
 
 <body>
@@ -59,15 +59,15 @@
                                 <i class="fa fa-phone"></i>Calls</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="important-dates.html">
                                 <i class="fa fa-calendar"></i>Important Dates</a>
                         </li>
                         <li>
-                            <a class="active" href="workshops.html">
+                            <a href="workshops.html">
                                 <i class="fa fa-edit"></i>Workshops</a>
                         </li>
                         <li>
-                            <a href="organizers.html">
+                            <a class="active" href="organizers.html">
                                 <i class="fa fa-users"></i>Organizers</a>
                         </li>
                         <li>
@@ -170,109 +170,114 @@
                     </div>
                 </div>
             </header>
+
             <div class="container loginSection">
-                <h3 class="pt-3">Workshops</h3>
+                <h3 class="pt-3">Organizers</h3>
 
                 <form action="#">
                     <div class="row">
                         <div class="col-md-6 py-2">
                             <select class="pl-0 ml-0 form-control">
-                                <option selected disabled>Workshop Name</option>
-                                <option>Workshop 1</option>
-                                <option>Workshop 2</option>
+                                <option selected disabled>Committee</option>
+                                <option>Committee 1</option>
                             </select>
                         </div>
                         <div class="col-md-6 py-2">
-                            <button class="btn btn-primary py-2 mt-1">Add Workshop</button>
+                            <button class="btn btn-primary py-2 mt-1">Add Committee</button>
                         </div>
                     </div>
                 </form>
 
                 <form>
                     <div class="row"> 
-                        <div class="col-md-4 py-2">
-                            <input type="text" class="form-control" placeholder="New Workshop Name">
+                        <div class="col-md-6 py-2">
+                            <input type="text" required class="form-control" placeholder="committee Name">
                         </div>
-                        <div class="col-md-4 py-2">
-                            <input type="text" required class="form-control" placeholder="Submission Link">
-                        </div>
-                        <div class="col-md-4 py-2">
+                        <div class="col-md-6 py-2">
                             <button class="btn btn-success px-5 py-2 mt-1">Save</button>
-                            <button type="button" class="btn btn-danger px-5 py-2 mt-1">Cancel</button>
+                            <button class="btn btn-danger px-5 py-2 mt-1">Cancel</button>
                         </div>  
                     </div>                      
                 </form>
 
                 <form class="loginSection mt-4">
-                    <h4>Organizer 1</h4>
+                    <h4>Committee 1</h4>
                     <div class="row"> 
-                        <div class="col-md-12 py-2">
+                        <div class="col-md-4 py-2">
+                            <img src="images/avatar.jpg" class="imgOrganizer" id="changeImgEdit">
+                            <input id='fileidE' onchange="readURLEdit(this)" type='file' hidden/>
+                            <button id='buttonid' type="button" class="btn btn-outline-primary my-2">Change Photo</button>
+                        </div>
+                        <div class="col-md-8 py-2">
                             <div class="row">
-                                <div class="col-md-4 pb-3">
+                                <div class="col-md-6 pb-3">
                                     <input type="text" required class="form-control" placeholder="First Name">
                                 </div>
-                                <div class="col-md-4 pb-3">
+                                <div class="col-md-6 pb-3">
                                     <input type="text" required class="form-control" placeholder="Last Name">
-                                </div>
-                                <div class="col-md-4 pb-3">
-                                    <input type="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4 pb-3">
-                                    <input type="text" class="form-control" placeholder="Organization / University">
+                                <div class="col-md-6 pb-3">
+                                    <input type="email" class="form-control" placeholder="Email">
                                 </div>
-                                <div class="col-md-4 pb-3">
-                                    <input type="text" class="form-control" placeholder="Country">
+                                <div class="col-md-6 pb-3">
+                                    <input type="text" required class="form-control" placeholder="Organization / University">
                                 </div>
                             </div>
+                            <div class="row pb-3">
+                                <div class="col-md-6 pb-3">
+                                    <input type="text" class="form-control" placeholder="Personal Website">
+                                </div>
+                                <div class="col-md-6 pb-3">
+                                    <input type="text" required class="form-control" placeholder="Country">
+                                </div>
+                            </div>
+                            <textarea class="form-control mb-3" placeholder="Bio"></textarea>
                             <button class="btn btn-success px-5">Add</button>
                         </div> 
                     </div>                      
                 </form>
 
                 <div class="row pt-3">
-                    <div class="col-lg-6 col-md-6 pb-2">
+                    <div class="col-lg-4 col-md-6 pb-2">
                         <div class="card text-left">
-                            <div class="card-body pr-5">
+                            <div class="card-body">
                                 <form action="#" class="pb-2">
                                     <div class="row px-1 pt-2">
-                                        <div class="col-md-5 col-12 pb-2">
+                                        <div class="col-8">
                                             <input type="text" placeholder="committee" class="form-control">
                                         </div>
-                                        <div class="col-md-5 col-12 pb-2">
-                                            <input type="text" placeholder="committee" class="form-control">
-                                        </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-save fa-lg"></i></button>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
                                         </div>
                                     </div>
                                 </form>
                                 <form action="#" class="pt-2">
-                                    <div class="row px-1 pt-1">
-                                        <div class="col-md-10 col-8 pt-2">
-                                            <h4>Organizer mohamed essa</h4>
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Committee Name</h4>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
                                         </div>
                                     </div>
                                 </form>
                                 <form action="#" class="pt-2">
-                                    <div class="row px-1 pt-1">
-                                        <div class="col-md-10 col-8 pt-2">
-                                            <h4>Organizer mohamed essa</h4>
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Committee Name</h4>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
                                         </div>
                                     </div>
@@ -280,47 +285,89 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 pb-2">
+                    <div class="col-lg-4 col-md-6 pb-2">
                         <div class="card text-left">
-                            <div class="card-body pr-5">
+                            <div class="card-body">
                                 <form action="#" class="pb-2">
                                     <div class="row px-1 pt-2">
-                                        <div class="col-md-5 col-12 pb-2">
+                                        <div class="col-8">
                                             <input type="text" placeholder="committee" class="form-control">
                                         </div>
-                                        <div class="col-md-5 col-12 pb-2">
-                                            <input type="text" placeholder="committee" class="form-control">
-                                        </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-save fa-lg"></i></button>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
                                         </div>
                                     </div>
                                 </form>
                                 <form action="#" class="pt-2">
-                                    <div class="row px-1 pt-1">
-                                        <div class="col-md-10 col-8 pt-2">
-                                            <h4>Organizer mohamed essa</h4>
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Committee Name</h4>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
                                         </div>
                                     </div>
                                 </form>
                                 <form action="#" class="pt-2">
-                                    <div class="row px-1 pt-1">
-                                        <div class="col-md-10 col-8 pt-2">
-                                            <h4>Organizer mohamed essa</h4>
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Committee Name</h4>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
                                         </div>
-                                        <div class="col-md-1 col-2 pt-2">
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pb-2">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                <form action="#" class="pb-2">
+                                    <div class="row px-1 pt-2">
+                                        <div class="col-8">
+                                            <input type="text" placeholder="committee" class="form-control">
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-save fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="#" class="pt-2">
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Committee Name</h4>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="#" class="pt-2">
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Committee Name</h4>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
                                             <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
                                         </div>
                                     </div>
