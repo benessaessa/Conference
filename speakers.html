@@ -22,7 +22,7 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>Important Dates</title>
+    <title>Speakers</title>
 </head>
 
 <body>
@@ -63,7 +63,7 @@
                                 <i class="fa fa-phone"></i>Calls</a>
                         </li>
                         <li>
-                            <a class="active" href="#">
+                            <a href="important-dates.html">
                                 <i class="fa fa-calendar"></i>Important Dates</a>
                         </li>
                         <li>
@@ -75,7 +75,7 @@
                                 <i class="fa fa-users"></i>Organizers</a>
                         </li>
                         <li>
-                            <a href="speakers.html">
+                            <a class="active" href="speakers.html">
                                 <i class="fa fa-user-clock"></i>Speakers</a>
                         </li>
                         <li>
@@ -179,120 +179,202 @@
                 </div>
             </header>
 
-            <div class="container">
-                <h3 class="py-3">Important Dates</h3>
-                <form action="#" class="loginSection">
-                    <div class="row">
-                        <div class="col-md-4 py-2">
-                            <div class="form-group">
-                                <label>Level</label>
-                                <select required class="form-control pl-0">
-                                    <option>Level 1</option>
-                                    <option>Level 2</option>
-                                    <option>Level 3</option>
-                                </select>
+            <div class="container loginSection">
+                <h3 class="pt-3">Speakers</h3>
+
+                <form class="loginSection mt-4">
+                    <div class="row"> 
+                        <div class="col-md-8 py-2">
+                            <div class="row">
+                                <div class="col-md-6 pb-3">
+                                    <input type="text" required class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6 pb-3">
+                                    <input type="text" required class="form-control" placeholder="Last Name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 py-2">
-                            <div class="form-group">
-                                <label>Track Name</label>
-                                <select required class="form-control pl-0">
-                                    <option>Track 1</option>
-                                    <option>Track 2</option>
-                                    <option>Track 3</option>
-                                </select>
+                            <div class="row">
+                                <div class="col-md-6 pb-3">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-md-6 pb-3">
+                                    <input type="text" required class="form-control" placeholder="Organization / University">
+                                </div>
                             </div>
-                        </div>
+                            <div class="row pb-3">
+                                <div class="col-md-6 pb-3">
+                                    <input type="text" class="form-control" placeholder="Personal Website">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select class="form-control pl-0">
+                                            <option selected disabled> Country </option>
+                                            <option> London </option>
+                                            <option> Ajax </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <textarea class="form-control mb-3" placeholder="Bio"></textarea>
+                            <div class="row">
+                                <div class="col-md-6 pb-3">
+                                    <label>Talk Date / Time</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-md-6 mt-4 pb-3 align-self-center">
+                                    <input type="number" class="form-control" placeholder="Room">
+                                </div>
+                            </div>
+                            <button class="btn btn-success px-5">Add</button>
+                        </div> 
                         <div class="col-md-4 py-2">
-                            <label>Important date description</label>
-                            <input class="form-control" placeholder="Description">
+                            <h6 class="text-center">Profile image</h6>
+                            <img src="images/avatar.jpg" class="imgOrganizer mx-auto d-block" id="changeImgEdit">
+                            <input id='fileidE' onchange="readURLEdit(this)" type='file' hidden/>
+                            <button id='buttonid' type="button" class="btn mt-3 mx-auto d-block btn-outline-primary my-2">Change Photo</button>
                         </div>
-                        <div class="col-md-6 py-2">
-                            <label>Deadline <i class="fa fa-asterisk text-danger fa-xs"></i></label>
-                            <input required type="date" class="form-control">
-                        </div> 
-                        <div class="col-md-6 py-2">
-                            <label>Second Deadline</label>
-                            <input type="date" value="2020-06-25" class="form-control">
-                        </div> 
-                        
-                        
-                        <div class="col-md-3">
-                            <input type="submit" class="btn btn-outline-primary btn-block mt-3 px-3" value="Add">
-                        </div>  
                     </div>                      
                 </form>
+
                 <div class="row pt-3">
-                    <div class="col-md-6">
+                    <div class="col-lg-4 col-md-6 pb-2">
                         <div class="card text-left">
-                          <div class="card-body">
-                            <h4 class="card-title">Track 1</h4>
-                            <div class="row">
-                                <div class="col-md-8 pt-1">
-                                    <p>Start Submission : 10/10/2020 - 12/12/2020</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <button class="btn btn-primary">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
+                            <div class="card-body">
+                                <form action="#" class="pb-2">
+                                    <div class="row px-1 pt-2">
+                                        <div class="col-8">
+                                            <input type="text" placeholder="committee" class="form-control">
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-save fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="#" class="pt-2">
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Ahmed</h4>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="#" class="pt-2">
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Mohamed</h4>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="row pt-2">
-                                <div class="col-md-8 pt-1">
-                                    <p>End Submission : 10/10/2020 - 12/12/2020</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <button class="btn btn-primary">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </div>
-                            <div class="row pt-2">
-                                <div class="col-md-8 pt-1">
-                                    <p>Start Submission 2 : 10/10/2020 - 12/12/2020</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <button class="btn btn-primary">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </div>
-                          </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-4 col-md-6 pb-2">
                         <div class="card text-left">
-                          <div class="card-body">
-                            <h4 class="card-title">Track 2</h4>
-                            <div class="row">
-                                <div class="col-md-8 pt-1">
-                                    <p>Start Submission : 10/10/2020 - 12/12/2020</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <button class="btn btn-primary">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
+                            <div class="card-body">
+                                <form action="#" class="pb-2">
+                                    <div class="row px-1 pt-2">
+                                        <div class="col-8">
+                                            <input type="text" placeholder="committee" class="form-control">
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-save fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="#" class="pt-2">
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Ahmed</h4>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="#" class="pt-2">
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Mohamed</h4>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="row pt-2">
-                                <div class="col-md-8 pt-1">
-                                    <p>End Submission : 10/10/2020 - 12/12/2020</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <button class="btn btn-primary">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pb-2">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                <form action="#" class="pb-2">
+                                    <div class="row px-1 pt-2">
+                                        <div class="col-8">
+                                            <input type="text" placeholder="committee" class="form-control">
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-save fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="#" class="pt-2">
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Ahmed</h4>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="#" class="pt-2">
+                                    <div class="row px-1">
+                                        <div class="col-8">
+                                            <h4 class="card-title pt-2">Mohamed</h4>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-edit fa-lg"></i></button>
+                                        </div>
+                                        <div class="col-2 pt-2">
+                                            <button type="button" class="btn bg-white"><i class="fa fa-trash-alt fa-lg"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="row pt-2">
-                                <div class="col-md-8 pt-1">
-                                    <p>Start Submission 2 : 10/10/2020 - 12/12/2020</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <button class="btn btn-primary">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </div>
-                          </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div> 
                 
 
@@ -309,7 +391,7 @@
                 </div>
             </div>
             <!--Dashboard footer ends-->
-        </>
+        </div>
         <!--Dashboard content Wrapper ends-->
     </div>
     <!-- Plugin JS-->

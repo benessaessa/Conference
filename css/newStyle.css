@@ -244,7 +244,7 @@
 }
 .formDrag{
   max-height: 22rem;
-  overflow: scroll;
+  overflow: auto;
 }
 @media screen and (max-width:991px){
     .contentPage{

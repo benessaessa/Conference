@@ -12,9 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <!-- Plugins CSS -->
     <link href="css/plugin.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
     <!-- Perfect scrollbar CSS-->
-    <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>tinymce.init({selector:'textarea'});</script> -->
     <link href="css/perfect-scrollbar.css" rel="stylesheet">
     <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
     <!-- style CSS -->
@@ -23,7 +22,7 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>Tracks</title>
+    <title>Sponsors</title>
 </head>
 
 <body>
@@ -48,15 +47,15 @@
                                 <i class="fa fa-book"></i>Prefrences</a>
                         </li>
                         <li>
-                            <a  href="conference-home.html">
+                            <a href="conference-home.html">
                                 <i class="fa fa-chart-area"></i>Conference Home</a>
                         </li>
                         <li>
-                            <a class="active" href="tracks.html">
+                            <a href="tracks.html">
                                 <i class="fa fa-book-open"></i>Tracks and Submissions</a>
                         </li>
                         <li>
-                            <a href="sponsors.html">
+                            <a href="sponsors.html" class="active">
                                 <i class="fab fa-accusoft"></i>Sponsors</a>
                         </li>
                         <li>
@@ -64,7 +63,7 @@
                                 <i class="fa fa-phone"></i>Calls</a>
                         </li>
                         <li>
-                            <a href="important-dates.html">
+                            <a href="#">
                                 <i class="fa fa-calendar"></i>Important Dates</a>
                         </li>
                         <li>
@@ -180,50 +179,184 @@
                 </div>
             </header>
 
-            <div class="container pt-3">
-                <h4 class="py-2">Tracks and Submissions guide lines </h4>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form class="loginSection pt-4">
-                            <div class="row justify-content-lg-center pt-2">
-                                <div class="col-lg-6 col-md-12 pb-2">
+            <div class="container">
+                <h3 class="py-3">Sposors</h3>
+                <ul class="nav nav-pills text-white newTabs flex-column flex-md-row nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#sponsorGuid" >Sponsor Guidlines</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"  data-toggle="tab" href="#sponsorShip" >Sponsorship Contact Person</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane container fade show active" id="sponsorGuid">
+                        <form action="sponsors.html" class="pt-4">
+                            
+                            <div class="row py-4">
+                                <div class="col-md-4">
+                                    <label>Type <i class="fa fa-asterisk text-danger fa-xs"></i></label>
                                     <div class="form-group">
-                                        <label>Track Name <i class="fa fa-asterisk text-danger fa-xs"></i></label>
-                                        <input type="text" required class="form-control" placeholder="EX:Computer Science" aria-describedby="helpId">
+                                        <select required class="form-control">
+                                            <option> Gold </option>
+                                            <option> Platinum </option>
+                                            <option> Silver </option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-12 pb-4">
-                                    <label> Submission Link </label>
-                                    <input type="text" class="form-control" placeholder="Https://" aria-describedby="helpId">
+                                <div class="col-md-4">
+                                    <label>Benifits <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <div class="form-group">
+                                        <select required class="form-control">
+                                            <option> Both- Banner </option>
+                                            <option> Banner </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="price">Price</label>
+                                        <input type="text" class="form-control" id="price" placeholder="Price">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pt-2">
+                                    <input type="submit" class="btn btn-outline-success px-5" value="Add">
                                 </div>
                             </div>
-                            <textarea class="form-control" placeholder="Submission guide lines"></textarea>
-                            <button class="btn btn-outline-primary px-5 mt-4">Add</button>
+
                         </form>
+                        <div class="pt-4">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="bg-success text-white font-weight-bold">
+                                        <tr>
+                                            <th>Sponsor Ship type</th>
+                                            <th>Benifits</th>
+                                            <th>Price</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">
+                                                <p> Gold </p>
+                                            </td>
+                                            <td>
+                                                <p> Both - Banner </p>
+                                            </td>
+                                            <td>
+                                                <p> 15$ </p>
+                                            </td>
+                                            <td>
+                                                <button class="btn px-4 btn-outline-primary">Edit</button>
+                                                <button class="btn btn-outline-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <p> Platinum </p>
+                                            </td>
+                                            <td>
+                                                <p> Both - Banner </p>
+                                            </td>
+                                            <td>
+                                                <p> 15$ </p>
+                                            </td>
+                                            <td>
+                                                <button class="btn px-4 btn-outline-primary">Edit</button>
+                                                <button class="btn btn-outline-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="table-responsive">
+                    <div class="tab-pane container fade pt-3" id="sponsorShip">
+                        <div class="row pt-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="pName">Person Name <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="text" required class="form-control" id="pName" placeholder="John">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="eMails">Email <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="text" required class="form-control" id="eMails" placeholder="Ex: john@pencil.com">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phoneNmbr">Phone Number </label>
+                                    <input  type="tel" class="form-control" id="phoneNmbr" placeholder="Ex: 01443469">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="orgniz">Organization </label>
+                                    <input  type="text" class="form-control" id="orgniz" placeholder="Ex: UNC ">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pb-3">
+                            <div class="col-md-6 pt-1">
+                                <p class="">
+                                    <input type="submit" class="btn px-5 btn-outline-success mt-3" value="Save">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="table-responsive mt-4">
                             <table class="table table-bordered">
                                 <thead class="bg-success text-white font-weight-bold">
                                     <tr>
-                                        <th>Tracks</th>
-                                        <th colspan="2">Actions</th>
+                                        <th>Person Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Organization</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td scope="row">
-                                            <p> maiores alias distinctio sequi nostrum ea earum explicabo eveniet nisi similique asperiores non reprehenderit officia!</p>
+                                            <p> Mohamed </p>
                                         </td>
-                                        <td><button class="btn px-4 btn-outline-primary">Edit</button></td>
-                                        <td><button class="btn btn-outline-danger">Delete</button></td>
+                                        <td>
+                                            <p> mohamed@gmail.com </p>
+                                        </td>
+                                        <td>
+                                            <p> 0111456562 </p>
+                                        </td>
+                                        <td>
+                                            <p>DMC</p>
+                                        </td>
+                                        <td>
+                                            <button class="btn px-4 btn-outline-primary">Edit</button>
+                                            <button class="btn btn-outline-danger">Delete</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="row">
-                                            <p> maiores alias distinctio sequi nostrum ea earum explicabo eveniet nisi similique asperiores non reprehenderit officia!</p>
+                                            <p> Mohamed </p>
                                         </td>
-                                        <td><button class="btn px-4 btn-outline-primary">Edit</button></td>
-                                        <td><button class="btn btn-outline-danger">Delete</button></td>
+                                        <td>
+                                            <p> mohamed@gmail.com </p>
+                                        </td>
+                                        <td>
+                                            <p> 0111456562 </p>
+                                        </td>
+                                        <td>
+                                            <p>DMC</p>
+                                        </td>
+                                        <td>
+                                            <button class="btn px-4 btn-outline-primary">Edit</button>
+                                            <button class="btn btn-outline-danger">Delete</button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -231,8 +364,10 @@
                     </div>
                 </div>
             </div>
+        </div> 
+                
 
-            <!--Dashboard footer starts-->
+           <!-- Footer -->
             <div class="dash-footer">
                 <div class="container">
                     <div class="row">
@@ -245,7 +380,7 @@
                 </div>
             </div>
             <!--Dashboard footer ends-->
-        </div>
+        </>
         <!--Dashboard content Wrapper ends-->
     </div>
     <!-- Plugin JS-->
