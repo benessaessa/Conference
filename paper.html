@@ -12,9 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <!-- Plugins CSS -->
     <link href="css/plugin.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
     <!-- Perfect scrollbar CSS-->
-    <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>tinymce.init({selector:'textarea'});</script> -->
     <link href="css/perfect-scrollbar.css" rel="stylesheet">
     <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
     <!-- style CSS -->
@@ -23,7 +22,7 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>Tracks</title>
+    <title>Accepted Paper</title>
 </head>
 
 <body>
@@ -48,11 +47,11 @@
                                 <i class="fa fa-book"></i>Prefrences</a>
                         </li>
                         <li>
-                            <a  href="conference-home.html">
+                            <a href="conference-home.html">
                                 <i class="fa fa-chart-area"></i>Conference Home</a>
                         </li>
                         <li>
-                            <a class="active" href="tracks.html">
+                            <a href="tracks.html">
                                 <i class="fa fa-book-open"></i>Tracks and Submissions</a>
                         </li>
                         <li>
@@ -64,7 +63,7 @@
                                 <i class="fa fa-phone"></i>Calls</a>
                         </li>
                         <li>
-                            <a href="important-dates.html">
+                            <a href="#">
                                 <i class="fa fa-calendar"></i>Important Dates</a>
                         </li>
                         <li>
@@ -88,7 +87,7 @@
                                 <i class="fa fa-certificate"></i>Program</a>
                         </li>
                         <li>
-                            <a href="paper.html">
+                            <a href="paper.html" class="active">
                                 <i class="fab fa-buffer"></i>Accepted paper</a>
                         </li>
                         <li>
@@ -200,59 +199,48 @@
                 </div>
             </header>
 
-            <div class="container pt-3">
-                <h4 class="py-2">Tracks and Submissions guide lines </h4>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form class="loginSection pt-4">
-                            <div class="row justify-content-lg-center pt-2">
-                                <div class="col-lg-6 col-md-12 pb-2">
-                                    <div class="form-group">
-                                        <label>Track Name <i class="fa fa-asterisk text-danger fa-xs"></i></label>
-                                        <input type="text" required class="form-control" placeholder="EX:Computer Science" aria-describedby="helpId">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 pb-4">
-                                    <label> Submission Link </label>
-                                    <input type="text" class="form-control" placeholder="Https://" aria-describedby="helpId">
-                                </div>
-                            </div>
-                            <textarea class="form-control" placeholder="Submission guide lines"></textarea>
-                            <button class="btn btn-outline-primary px-5 mt-4">Add</button>
-                        </form>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead class="bg-success text-white font-weight-bold">
-                                    <tr>
-                                        <th>Tracks</th>
-                                        <th colspan="2">Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td scope="row">
-                                            <p> maiores alias distinctio sequi nostrum ea earum explicabo eveniet nisi similique asperiores non reprehenderit officia!</p>
-                                        </td>
-                                        <td><button class="btn px-4 btn-outline-primary">Edit</button></td>
-                                        <td><button class="btn btn-outline-danger">Delete</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">
-                                            <p> maiores alias distinctio sequi nostrum ea earum explicabo eveniet nisi similique asperiores non reprehenderit officia!</p>
-                                        </td>
-                                        <td><button class="btn px-4 btn-outline-primary">Edit</button></td>
-                                        <td><button class="btn btn-outline-danger">Delete</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            <div class="container">
+                <h3 class="py-3">Accepted papers</h3>
+                <form>
+                    <div class="row">
+                        <div class="col-md-4 pb-3">
+                            <label> Paper ID <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                            <input type="text" required class="form-control" placeholder="Paper ID">
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <label> Paper Title <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                            <input type="text" required class="form-control" placeholder="Paper Title">
                         </div>
                     </div>
-                </div>
+                    <h4 class="py-3">Author</h4>
+                    <div class="row">
+                        <div class="col-md-4 pb-3">
+                            <label> First Name <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                            <input type="text" required class="form-control" placeholder="Ex: Ahmed">
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <label> Last Name <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                            <input type="text" required class="form-control" placeholder="Ex: Ali">
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <label> Email </label>
+                            <input type="email" required class="form-control" placeholder="Ex: mohamed@gmail.com">
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <label> Organization / University <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                            <input type="text" required class="form-control" placeholder="Ex: Cairo University">
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <p class="pb-4"></p>
+                            <button class="btn btn-success py-2 mt-5 px-5">Add</button>
+                        </div>
+                    </div>
+                </form>
             </div>
+        </div> 
+                
 
-            <!--Dashboard footer starts-->
+           <!-- Footer -->
             <div class="dash-footer">
                 <div class="container">
                     <div class="row">
@@ -265,7 +253,7 @@
                 </div>
             </div>
             <!--Dashboard footer ends-->
-        </div>
+        </>
         <!--Dashboard content Wrapper ends-->
     </div>
     <!-- Plugin JS-->
