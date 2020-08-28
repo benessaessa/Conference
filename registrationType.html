@@ -22,7 +22,7 @@
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet" />
     <!-- Document Title -->
-    <title>Accepted Paper</title>
+    <title>Registration Type</title>
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                                 <i class="fa fa-chart-area"></i>Conference Home</a>
                         </li>
                         <li>
-                            <a href="registrationType.html">
+                            <a class="active" href="registrationType.html">
                                 <i class="fa fa-sign-in-alt"></i>Registration Type</a>
                         </li>
                         <li>
@@ -67,7 +67,7 @@
                                 <i class="fa fa-phone"></i>Calls</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="important-dates.html">
                                 <i class="fa fa-calendar"></i>Important Dates</a>
                         </li>
                         <li>
@@ -91,7 +91,7 @@
                                 <i class="fa fa-certificate"></i>Program</a>
                         </li>
                         <li>
-                            <a href="paper.html" class="active">
+                            <a href="paper.html">
                                 <i class="fab fa-buffer"></i>Accepted paper</a>
                         </li>
                         <li>
@@ -203,48 +203,115 @@
                 </div>
             </header>
 
-            <div class="container">
-                <h3 class="py-3">Accepted papers</h3>
-                <form>
-                    <div class="row">
-                        <div class="col-md-4 pb-3">
-                            <label> Paper ID <i class="fa fa-asterisk text-danger fa-xs"></i></label>
-                            <input type="text" required class="form-control" placeholder="Paper ID">
-                        </div>
-                        <div class="col-md-4 pb-3">
-                            <label> Paper Title <i class="fa fa-asterisk text-danger fa-xs"></i></label>
-                            <input type="text" required class="form-control" placeholder="Paper Title">
+            <div class="container pt-4">
+                <ul class="nav nav-pills text-white newTabs flex-column flex-md-row nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#registartionType" >Registration Type</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"  data-toggle="tab" href="#cancelPolicy">Cancellation Policy</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane container fade show active" id="registartionType">
+                        <form action="program.html" class="pt-4">
+                            <div class="row">
+                                <div class="col-md-4 pb-3">
+                                    <label> Registration Type <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="text" required class="form-control" placeholder="Registration Type">
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <label> Early Date <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="date" required class="form-control" >
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <label> Early Value <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="text" required class="form-control" placeholder="Early Value">
+                                </div>
+                                <div class="col-md-4 pb-3">
+                                    <label> Regular Value <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="text" class="form-control" placeholder="Regular Value">
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="pb-4"></p>
+                                    <button class="btn btn-success mt-5 px-5">Add</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="table-responsive mt-4">
+                            <table class="table table-bordered">
+                                <thead class="bg-success text-white font-weight-bold">
+                                    <tr>
+                                        <th>Registration Type</th>
+                                        <th>Early Date</th>
+                                        <th>Early Value</th>
+                                        <th>Regular Value</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">
+                                            <p> Mohamed </p>
+                                        </td>
+                                        <td>
+                                            <p> 9/9/2020 </p>
+                                        </td>
+                                        <td>
+                                            <p> 15$ </p>
+                                        </td>
+                                        <td>
+                                            <p>55$</p>
+                                        </td>
+                                        <td>
+                                            <button class="btn px-4 btn-outline-primary">Edit</button>
+                                            <button class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <p> Mohamed </p>
+                                        </td>
+                                        <td>
+                                            <p> 9/9/2020 </p>
+                                        </td>
+                                        <td>
+                                            <p> 15$ </p>
+                                        </td>
+                                        <td>
+                                            <p>55$</p>
+                                        </td>
+                                        <td>
+                                            <button class="btn px-4 btn-outline-primary">Edit</button>
+                                            <button class="btn btn-outline-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <h4 class="py-3">Author</h4>
-                    <div class="row">
-                        <div class="col-md-4 pb-3">
-                            <label> First Name <i class="fa fa-asterisk text-danger fa-xs"></i></label>
-                            <input type="text" required class="form-control" placeholder="Ex: Ahmed">
-                        </div>
-                        <div class="col-md-4 pb-3">
-                            <label> Last Name <i class="fa fa-asterisk text-danger fa-xs"></i></label>
-                            <input type="text" required class="form-control" placeholder="Ex: Ali">
-                        </div>
-                        <div class="col-md-4 pb-3">
-                            <label> Email </label>
-                            <input type="email" required class="form-control" placeholder="Ex: mohamed@gmail.com">
-                        </div>
-                        <div class="col-md-4 pb-3">
-                            <label> Organization / University <i class="fa fa-asterisk text-danger fa-xs"></i></label>
-                            <input type="text" required class="form-control" placeholder="Ex: Cairo University">
-                        </div>
-                        <div class="col-md-4 pb-3">
-                            <p class="pb-4"></p>
-                            <button class="btn btn-success py-2 mt-5 px-5">Add</button>
-                        </div>
+                    <div class="tab-pane container fade pt-3" id="cancelPolicy">
+                        <form>
+                            <textarea  class="form-control" placeholder="introduction" rows="5"></textarea>
+                            <div class="row pt-3">
+                                <div class="col-md-6 pb-3">
+                                    <label> Date <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="Date" required class="form-control">
+                                </div>
+                                <div class="col-md-6 pb-3">
+                                    <label> Fees <i class="fa fa-asterisk text-danger fa-xs"></i></label>
+                                    <input type="text" required class="form-control" placeholder="Fees">
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-success px-5">Add</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
-        </div> 
-                
 
-           <!-- Footer -->
+            <!--Dashboard footer starts-->
             <div class="dash-footer">
                 <div class="container">
                     <div class="row">
@@ -257,7 +324,7 @@
                 </div>
             </div>
             <!--Dashboard footer ends-->
-        </>
+        </div>
         <!--Dashboard content Wrapper ends-->
     </div>
     <!-- Plugin JS-->
@@ -267,16 +334,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
     <!--Perfect Scrollbar JS-->
-    <script src="js/perfect-scrollbar.min.js"></script>
+    <!-- <script src="js/perfect-scrollbar.min.js"></script> -->
     <!-- Chart JS -->
-    <script src='js/chart.js'></script>
+    <!-- <script src='js/chart.js'></script> -->
     <!-- Main JS-->
     <!-- Dashboard JS-->
     <script src="js/dashboard.js"></script>
-    <script type="text/javascript" src="fancy-file-uploader/jquery.ui.widget.js"></script>
-    <script type="text/javascript" src="fancy-file-uploader/jquery.fileupload.js"></script>
-    <script type="text/javascript" src="fancy-file-uploader/jquery.iframe-transport.js"></script>
-    <script type="text/javascript" src="fancy-file-uploader/jquery.fancy-fileupload.js"></script>
     <script src="js/main.js"></script>
     <script src="js/newScript.js"></script>
 </body>
