@@ -182,7 +182,14 @@
     width: 60px;
     height: 34px;
   }
-  
+  .site-menu .switch{
+    width: 56px;
+    height: 27px
+  }
+  .site-menu .sliderr:before{
+    bottom: 1px;
+    left: 2px;
+  }
   .switch input { 
     opacity: 0;
     width: 0;
